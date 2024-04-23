@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage[table]{xcolor}
+\usepackage{multirow}
+\begin{document}
+	\begin{table}[h]
+		\centering
+		
+		\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline
+			\textbf{Time} & \textbf{Mon} & \textbf{Tue} & \textbf{Wed} & \textbf{Thu} & \textbf{Fri} & \textbf{Sat} \\
+			\hline
+			Slot-1 &  &  & \cellcolor{red} E-G &  &  & \\
+			\hline
+			Slot-2 & \cellcolor{orange} DAA & \cellcolor{yellow} WEB & \cellcolor{red} E-G & \cellcolor{blue!40} M-3 & \cellcolor{orange} DAA &\\
+			\hline
+			Slot-3 & \cellcolor{blue!40} M-3 & \cellcolor{yellow} WEB & \cellcolor{blue!40} M-3 & \cellcolor{blue!40} M-3 & \cellcolor{orange} DAA &\\
+			\hline
+			Slot-4 &  & \cellcolor{green}OS & \cellcolor{green} OS &  &  & \\
+			\hline
+			\multicolumn{7}{|c|}{Lunch Break} \\
+			\hline
+			Slot-5 & \cellcolor{green} OS & \cellcolor{blue!20} & \cellcolor{red} & \cellcolor{yellow} & \cellcolor{orange} & \\
+			\cline{1-2} \cline{7-1}
+			Slot-6 & \cellcolor{yellow} WEB & \cellcolor{blue!20} PY & \cellcolor{red} E-G & \cellcolor{yellow} WEB & \cellcolor{orange} DAA & \\
+			\cline{1-2} \cline{7-1}
+			Slot-7 &  & \cellcolor{blue!20} & \cellcolor{red} & \cellcolor{yellow} & \cellcolor{orange} & \\
+			\hline
+			Slot-8 &  &  &  &  &  & \\
+			\hline
+		\end{tabular}
+		\caption{C4 Time Table}
+		\label{tab:example}
+	\end{table}
+\end{document}}
